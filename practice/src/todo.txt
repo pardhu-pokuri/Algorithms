@@ -1,0 +1,11 @@
+1) find if there is a subarray with sum zero. //http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/
+2) Given MxN matrix with sorted elements row wise and column wise, find the Kth largest element
+3) Given MxN matrix with sorted elements row wise and column wise, find an element
+4) Given MxN matrix which contains 1s and 0s, find the largest sub matrix which contains most number of 1s. condition is that each row in the sub matrix must contain at-least one 1
+5) Find intersection point of two linked lists.
+6) Merge k sorted arrays
+7) covert a Binary tree to DLL
+8) prefix,postfix,infix expressions evaluation and conversion
+9) Longest Common Sub Sequence.
+10) iterative method of tree transversal.
+11) deletion in BST.
