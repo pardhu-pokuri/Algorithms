@@ -1,0 +1,100 @@
+Main : Status of thread 0 : NEW
+Main : Status of thread 1 : NEW
+Main : Status of thread 2 : NEW
+Main : Status of thread 3 : NEW
+Main : Status of thread 4 : NEW
+Main : Status of thread 5 : NEW
+Main : Status of thread 6 : NEW
+Main : Status of thread 7 : NEW
+Main : Status of thread 8 : NEW
+Main : Status of thread 9 : NEW
+Main : Id 8 - MyThread0
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 9 - MyThread1
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 10 - MyThread2
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 11 - MyThread3
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 12 - MyThread4
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 13 - MyThread5
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: RUNNABLE
+Main : ************************************
+Main : Id 14 - MyThread6
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 15 - MyThread7
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 16 - MyThread8
+Main : Priority: 1
+Main : Old State: NEW
+Main : New State: BLOCKED
+Main : ************************************
+Main : Id 17 - MyThread9
+Main : Priority: 10
+Main : Old State: NEW
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 13 - MyThread5
+Main : Priority: 10
+Main : Old State: RUNNABLE
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 11 - MyThread3
+Main : Priority: 10
+Main : Old State: BLOCKED
+Main : New State: RUNNABLE
+Main : ************************************
+Main : Id 12 - MyThread4
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 8 - MyThread0
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: RUNNABLE
+Main : ************************************
+Main : Id 10 - MyThread2
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 11 - MyThread3
+Main : Priority: 10
+Main : Old State: RUNNABLE
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 16 - MyThread8
+Main : Priority: 1
+Main : Old State: BLOCKED
+Main : New State: TERMINATED
+Main : ************************************
+Main : Id 8 - MyThread0
+Main : Priority: 1
+Main : Old State: RUNNABLE
+Main : New State: TERMINATED
+Main : ************************************
