@@ -1,4 +1,4 @@
-package threads;
+package threads_ch1;
 
 public class PrimeGenerator extends  Thread{
 

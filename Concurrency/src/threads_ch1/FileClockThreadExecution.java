@@ -1,13 +1,13 @@
-package threads;
+package threads_ch1;
 
 import java.util.concurrent.TimeUnit;
 
-public class FileSearchThreadInterruption {
+public class FileClockThreadExecution {
 
 	public static void main(String[] args) {
 		
-		FileSearch searchRunnable = new FileSearch("D:\\", "720p");
-		Thread thread = new Thread(searchRunnable);
+		FileClock clock = new FileClock();
+		Thread thread = new Thread(clock);
 		thread.start();
 		
 		try {
@@ -17,9 +17,6 @@ public class FileSearchThreadInterruption {
 		}
 		
 		thread.interrupt();
-		
 	}
-	
-	
-	
+
 }
