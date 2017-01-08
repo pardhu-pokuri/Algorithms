@@ -1,4 +1,4 @@
-package threads;
+package threads_ch1;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
