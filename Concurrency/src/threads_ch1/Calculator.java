@@ -1,5 +1,11 @@
 package threads_ch1;
 
+
+/**
+ * 
+ * This class prints multiplication table of a given number from 1 to 10
+ *
+ */
 public class Calculator implements Runnable{
 
 	private int number;

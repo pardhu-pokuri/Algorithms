@@ -30,7 +30,7 @@ public class JoiningThreadsExample {
 			public void run() {
 				System.out.println("Network Connections Loader Started " + new Date());
 				try {
-					TimeUnit.SECONDS.sleep(5);
+					TimeUnit.SECONDS.sleep(15);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -43,7 +43,11 @@ public class JoiningThreadsExample {
 		networkConnectionsLoader.start();
 		
 		try {
+			/**
+			 * the current thread i.e main thread will wait till the execution of dataSourcesLoader and networkConnectionsLoader threads.
+			 */
 			dataSourcesLoader.join();
+			System.out.println("In the middle");
 			networkConnectionsLoader.join();
 		} catch (InterruptedException e) {
 			e.printStackTrace();

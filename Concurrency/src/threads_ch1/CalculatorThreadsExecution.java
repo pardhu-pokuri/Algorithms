@@ -6,9 +6,6 @@ import java.io.PrintWriter;
 
 public class CalculatorThreadsExecution {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		
 		//executeThreads();
@@ -23,6 +20,10 @@ public class CalculatorThreadsExecution {
 
 	}
 	
+	
+	/**
+	 * creates 10 threads. Each thread will print multiplication table for a given number i.e i
+	 */
 	private static void executeThreads(){
 		
 		for(int i = 1 ; i <= 10 ; i++){
@@ -32,6 +33,15 @@ public class CalculatorThreadsExecution {
 		
 	}
 	
+	/**
+	 * Threads can have a priority between one and 10, where one is the lowest priority and 10 is the highest
+	 * one. It's not recommended to change the priority of the threads, but it's a possibility
+	 * that you can use if you want.
+	 * 
+	 * A thread can be in one of these Six states. NEW, RUNNABLE, BLOCKED, WAITING, TIME WAITING, TERMINATED.
+	 * The Enum for these 6 six states are present in Thread.State Enum. 
+	 * @throws IOException
+	 */
 	private static void executeThreadsWithStatus() throws IOException{
 		
 		Thread[] threads = new Thread[10];
@@ -93,6 +103,7 @@ public class CalculatorThreadsExecution {
 		
 	}
 	
+	
 	private static void printRunningThreadStatus(){
 		
 		Thread thread = new Thread(new Runnable() {
@@ -101,6 +112,10 @@ public class CalculatorThreadsExecution {
 			public void run() {
 				
 				System.out.println("In the Anonymous runnable task");
+				/*
+				 * you can get the State of one thread from other threads, if you have reference of the thread you want to check status for.
+				 * By using Thread.currentThread().getState() you can get the status of the current thread.  
+				 */
 				System.out.println(Thread.currentThread().getState());
 				
 			}

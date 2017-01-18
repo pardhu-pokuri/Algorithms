@@ -12,6 +12,7 @@ public class FileClock implements Runnable {
 			
 			System.out.println("Date is " + new Date());
 			
+			//if someother thread interrupts this thread while sleeping, sleep method throws an InterruptedException
 			try {
 				TimeUnit.SECONDS.sleep(1);
 			} catch (InterruptedException e) {

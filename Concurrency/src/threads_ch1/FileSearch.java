@@ -53,7 +53,10 @@ public class FileSearch implements Runnable{
 				processFile(eachFile);
 			}
 		}
-		
+		/*
+		 * You can throw InterruptedException back to run method and handle the interruption of thread in run method instead of other methods called by run method.
+		 * We throw exceptions backs to run method when there are multiple methods that gets called by run method. 
+		 */
 		if(Thread.currentThread().isInterrupted()){
 			throw new InterruptedException();
 		}

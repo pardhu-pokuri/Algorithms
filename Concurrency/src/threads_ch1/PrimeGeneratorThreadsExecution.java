@@ -2,9 +2,7 @@ package threads_ch1;
 
 public class PrimeGeneratorThreadsExecution {
 
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 	
 		Thread thread = new PrimeGenerator();
@@ -14,6 +12,7 @@ public class PrimeGeneratorThreadsExecution {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		//interrupts a thread by setting a flag.
 		thread.interrupt();
 
 	}
