@@ -20,7 +20,12 @@ public class test2{
 		};
 		Thread t2 = new Thread(r,"pardhu2");
 		t.start();
-		Thread.currentThread().sleep(10);
+		try {
+			Thread.currentThread().sleep(10);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		t2.start();
 	}
 
