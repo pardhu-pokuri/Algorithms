@@ -26,7 +26,7 @@ public class MethodReferenceExample2 {
 		 *  In general (p) -> method(p) lambda expression can be replaced with ContainingClass::method
 		 */
 		System.out.println("Printing All persons");
-		performConditionally(people, (person) -> true, System.out::println);/\
+		performConditionally(people, (person) -> true, System.out::println);
 		
 	}
 

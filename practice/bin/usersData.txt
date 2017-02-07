@@ -1,0 +1,9 @@
+ramu,1,age:18$height:5
+somu,2,age:29$height:6
+tom,3,age:23$height:5.5
+akbar,4,age:14$height:5.3
+birbal,5,age:16$height:5.2
+sanjay,6,age:18$height:5.11
+aarya,7,age:19$height:5.6
+priya,8,age:16$height:5.2
+sandhya,9,age:17$height:5.1
