@@ -49,6 +49,7 @@ class EvenRunnable implements Runnable{
 					System.out.println(2*i);
 				}
 				printNumbers.isEven = false;
+				obj.notify();
 				try {
 					obj.wait();
 				} catch (InterruptedException e) {
