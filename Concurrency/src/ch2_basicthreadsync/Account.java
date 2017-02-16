@@ -1,9 +1,7 @@
 package ch2_basicthreadsync;
 
-
 /**
  * model for account
- * 
  *
  */
 public class Account {
@@ -22,7 +20,7 @@ public class Account {
 	 * increase balance by given amount 
 	 * @param amount
 	 */
-	public void addAmount(double amount){
+	public synchronized void addAmount(double amount){
 		double tmp = balance;
 		try {
 			Thread.sleep(10);
@@ -37,7 +35,7 @@ public class Account {
 	 * decreases balance by given amount
 	 * @param amount
 	 */
-	public void subtractAmount(double amount){
+	public synchronized void subtractAmount(double amount){
 		double tmp = balance;
 		try {
 			Thread.sleep(10);
