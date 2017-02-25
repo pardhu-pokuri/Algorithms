@@ -1,0 +1,9 @@
+/applicationContext/
+/beans.xml
+/lazybeans.xml
+/lifecyclebeans.xml
+/postprocessbeans.out.xml
+/postprocessbeans.xml
+/scopedbeans.xml
+/spring/
+/xmlFactory/

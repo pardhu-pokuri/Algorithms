@@ -1,0 +1,8 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- Xml file for beans , Any name can be given to this file. Spring creates objects of beans defined here when this xml path is passed to any of its spring containers.-->
+			
+<beans>
+	<bean name="hwb" class="spring.beans.HelloWorld" scope="singleton"></bean>
+	<bean name="emp" class="spring.beans.Employee"></bean>
+</beans>
