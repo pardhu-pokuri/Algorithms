@@ -1,0 +1,80 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="jb" class="spring.beans.Japan">
+		<constructor-arg value="Asia" />
+		<constructor-arg value="Japanese" />
+		<constructor-arg value="Yen" />
+		<constructor-arg value="Tokyo" />
+		<constructor-arg value="1" type="int" />
+	</bean>
+
+	<bean id="singleparamter" class="spring.beans.Tourist">
+		<constructor-arg ref="jb" />
+	</bean>
+
+	<bean id="twoparamters_onenested" class="spring.beans.Tourist">
+		<constructor-arg ref="jb" />
+		<constructor-arg>
+			<bean class="spring.beans.Italy">
+				<constructor-arg value="Europe" />
+				<constructor-arg value="Italian" />
+				<constructor-arg value="Euro" />
+				<constructor-arg value="Rome" />
+				<constructor-arg value="2" type="int" />
+			</bean>
+		</constructor-arg>
+	</bean>
+
+	<bean id="listofparamters" class="spring.beans.Tourist">
+		<constructor-arg>
+			<list>
+				<bean class="spring.beans.Japan">
+					<constructor-arg value="Asia" />
+					<constructor-arg value="Japanese" />
+					<constructor-arg value="Yen" />
+					<constructor-arg value="Tokyo" />
+					<constructor-arg value="1" type="int" />
+				</bean>
+
+				<bean class="spring.beans.Italy">
+					<constructor-arg value="Europe" />
+					<constructor-arg value="Italian" />
+					<constructor-arg value="Euro" />
+					<constructor-arg value="Rome" />
+					<constructor-arg value="2" type="int" />
+				</bean>
+
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="mapofparamters" class="spring.beans.Tourist">
+		<constructor-arg>
+			<map>
+				<entry key="japan">
+					<bean class="spring.beans.Japan">
+						<constructor-arg value="Asia" />
+						<constructor-arg value="Japanese" />
+						<constructor-arg value="Yen" />
+						<constructor-arg value="Tokyo" />
+						<constructor-arg value="1" type="int" />
+					</bean>
+				</entry>
+				<entry key="italy">
+					<bean class="spring.beans.Italy">
+						<constructor-arg value="Europe" />
+						<constructor-arg value="Italian" />
+						<constructor-arg value="Euro" />
+						<constructor-arg value="Rome" />
+						<constructor-arg value="2" type="int" />
+					</bean>
+				</entry>
+
+			</map>
+		</constructor-arg>
+	</bean>
+
+</beans>
