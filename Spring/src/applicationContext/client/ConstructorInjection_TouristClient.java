@@ -1,11 +1,11 @@
-package xmlFactory.client;
+package applicationContext.client;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import spring.beans.Tourist;
 
-public class TouristClient {
+public class ConstructorInjection_TouristClient {
 	
 	private static ApplicationContext context = new ClassPathXmlApplicationContext("constructor_injection.xml");
 	public static void main(String[] args) {
