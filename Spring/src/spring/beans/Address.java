@@ -26,5 +26,13 @@ public class Address {
 		this.pin = pin;
 	}
 
+	public void details() {
+		
+		System.out.println("Area is :" + area);
+		System.out.println("City is :" + city);
+		System.out.println("State is :" + state);
+		System.out.println("Pin is :" + pin);
+	}
+
 	
 }

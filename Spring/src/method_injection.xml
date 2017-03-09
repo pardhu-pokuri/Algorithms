@@ -1,0 +1,41 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="student" class="spring.beans.Student">
+		<property name="id" value="292"></property>
+		<property name="name" value="pardhu"></property>
+		<property name="courses">
+			<list>
+				<value>DataStructures</value>
+				<value>Compilers</value>
+				<value>OperatingSystem</value>
+				<value>ComputerNetworks</value>
+			</list>
+		</property>
+		<property name="college" ref="college"></property>
+	</bean>
+
+
+	<bean id="college" class="spring.beans.College">
+		<property name="name" value="BITS GOA" />
+		<property name="departments">
+			<list>
+				<value>CS</value>
+				<value>IS</value>
+				<value>EEE</value>
+				<value>ENI</value>
+			</list>
+		</property>
+		<property name="address" ref="address"/>
+	</bean>
+	
+	<bean id="address" class="spring.beans.Address">
+		<property name = "city" value = "vascodagama"/>
+		<property name = "area" value = "zuarinagar"/>
+		<property name ="state" value="goa"/>
+		<property name ="pin" value="522007"/>
+	</bean>
+
+</beans>
