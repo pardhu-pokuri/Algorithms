@@ -1,0 +1,9 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- Xml file for beans , Any name can be given to this file. Spring creates objects of beans defined here when this xml path is passed to any of its spring containers.-->
+			
+<beans>
+	<bean name="cbi" class="spring.beans.CompleteBeanThroughInterfaces"></bean>
+	<bean name="cbx" class="spring.beans.CompleteBeanThroughXML" init-method="initMethod" destroy-method="destroyMethod" lazy-init="true"></bean>
+	<bean class="spring.beans.postprocessor.PostProcessor"/>
+</beans>
